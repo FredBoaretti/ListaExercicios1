@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './AppLista.css';
+import DadosAluno from './DadosAluno';
 
 function AppLista() {
 
@@ -16,6 +17,7 @@ function AppLista() {
           <input
             value={nome}
             onChange={e => setNome(e.target.value)}
+            onClick = {DadosAluno}
             placeholder="Nome Completo"
           />
         </div>
